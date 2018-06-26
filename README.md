@@ -2,7 +2,8 @@
 
 **多功能心理測驗量表專案**
 <br/>
-**Adolescent-Emotion-Scale 2015-2016**
+**Adolescent-Emotion-Scale Project 2015-2016**
+<br/>
 **Psychological-Scale Project 2017-2018**
 
 ![image](https://oxygentw.net/wp-files/logo/logo-resize.png)
