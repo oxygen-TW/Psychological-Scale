@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>壓力量表</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Tocas UI：CSS 與元件 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocas-ui/2.3.3/tocas.css">
+    <!-- Tocas JS：模塊與 JavaScript 函式 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocas-ui/2.3.3/tocas.js"></script>
+    <script src="stress.js"></script>
+</head>
+
+<body onload="init()">
+    <div class="ts one column narrow stackable container grid" style="margin-bottom: 10px">
+        <div class="ts fluid slate" id="main_question">
+            這是一塊普通的板岩，看起來十分無聊
+        </div>
+    </div>
+    <div class="ts one column narrow container grid">
+        <button class="ts button" onclick="AnswerButtonClick(1);" style="width: 18%; margin:auto">沒有壓力</button>
+        <button class="ts button" onclick="AnswerButtonClick(2);" style="width: 18%; margin:auto">輕微壓力</button>
+        <button class="ts button" onclick="AnswerButtonClick(3);" style="width: 18%; margin:auto">中等壓力</button>
+        <button class="ts button" onclick="AnswerButtonClick(4);" style="width: 18%; margin:auto">沉重壓力</button>
+        <button class="ts button" onclick="AnswerButtonClick(5);" style="width: 18%; margin:auto">極沉重壓力</button>
+    </div>
+</body>
+
+</html>
