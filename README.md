@@ -4,9 +4,9 @@
 <br/>
 **Adolescent-Emotion-Scale Project 2015-2016**
 <br/>
-**Psychological-Scale Project 2017-2018**
+**Psychological-Scale Project 2017-2019**
 
-![image](https://oxygentw.net/wp-files/logo/logo-resize.png)
+![image](https://oxygentw.net/files/logo.png)
 
 ## How to download?
 - SourceForge: https://sourceforge.net/projects/teen-emotion-test/
