@@ -1,4 +1,4 @@
-﻿Public Class Form3
+﻿Public Class DepressionForm
     Private Sub Form3_Load(sender As Object, e As EventArgs) Handles Me.Load
         Call Q(i)
     End Sub
@@ -136,14 +136,14 @@
         If r = 1 Then
             reset()
             Hide()
-            Form2.Show()
+            UserMenu.Show()
         ElseIf r = 2 Then
             Exit Sub
         End If
 
         reset()
         Me.Hide()
-        Form2.Show()
+        UserMenu.Show()
     End Sub
 
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
@@ -158,9 +158,10 @@
     End Sub
 
     Private Sub Form3_Closed(sender As Object, e As EventArgs) Handles Me.Closed
-        Form2.Close()
+        UserMenu.Close()
         Try
-            Form1.Close()
+            StressForm1.Close()
+            StressForm2.Close()
         Catch ex As System.NullReferenceException
 
         End Try

@@ -1,17 +1,17 @@
 ﻿
 
-Public Class Form2
+Public Class UserMenu
 
     Private Sub Registration()
 
         ' Get the path to the Application Data folder from <tools.GetAppData>
         Dim appData = GetAppData()
         '檢查組態路徑是否存在
-        If (Not System.IO.Directory.Exists(appData + "\Adolescent-Emotion-Scale")) Then
-            IO.Directory.CreateDirectory(appData + "\Adolescent-Emotion-Scale")
+        If (Not System.IO.Directory.Exists(appData + "\Emotion-Scale")) Then
+            IO.Directory.CreateDirectory(appData + "\Emotion-Scale")
             'Console.WriteLine("Not Found")
 
-            FileOpen(1, appData + "\Adolescent-Emotion-Scale\config.ini", OpenMode.Output)
+            FileOpen(1, appData + "\Emotion-Scale\config.ini", OpenMode.Output)
             PrintLine(1, Nothing)
             FileClose(1)
         Else
@@ -50,17 +50,22 @@ Public Class Form2
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Me.Hide()
-        Form1.Show()
+        StressForm1.Show()
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Me.Hide()
-        Form3.Show()
+        DepressionForm.Show()
+    End Sub
+
+    Private Sub ButtonStreess2_Click(sender As Object, e As EventArgs) Handles ButtonStreess2.Click
+        Me.Hide()
+        StressForm2.Show()
     End Sub
 
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles Me.Load
-        MsgBox("壓力量表為聯合心理諮商所、緯恩整合行銷版權所有!" & vbCrLf & "憂鬱量表為董氏基金會版權所有!" & vbCrLf & "氧氣工作室僅將他做成小程式，並不擁有量表版權 " _
-            & vbCrLf & vbCrLf & "使用本程式即同意我們收集數據進行分析!", 0 + 48, "版權聲明")
+        MsgBox("青少年壓力量表為聯合心理諮商所、緯恩整合行銷版權所有!" & vbCrLf & "憂鬱量表為董氏基金會版權所有!" & vbCrLf & "氧氣工作室僅將他做成小程式，並不擁有量表版權 " _
+            & vbCrLf & "一般壓力量表為衛生福利部國民健康署版權所有" & vbCrLf & vbCrLf & "使用本程式即同意我們收集數據進行分析!", 0 + 48, "版權聲明")
 
         Call Registration()
     End Sub

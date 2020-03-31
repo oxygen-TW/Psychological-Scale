@@ -1,4 +1,4 @@
-﻿Public Class Form1
+﻿Public Class StressForm1
     Dim ans(30) As Integer
     Dim total As Integer = 0
     Dim i As Integer = 1
@@ -169,14 +169,14 @@
 
             reset()
             Me.Hide()
-            Form2.Show()
+            UserMenu.Show()
         ElseIf r = 2 Then
             Exit Sub
         End If
 
         reset()
         Me.Hide()
-        Form2.Show()
+        UserMenu.Show()
     End Sub
 
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
@@ -191,9 +191,10 @@
     End Sub
 
     Private Sub Form1_Closed(sender As Object, e As EventArgs) Handles Me.Closed
-        Form2.Close()
+        UserMenu.Close()
         Try
-            Form3.Close()
+            DepressionForm.Close()
+            StressForm2.Close()
         Catch ex As System.NullReferenceException
 
         End Try
