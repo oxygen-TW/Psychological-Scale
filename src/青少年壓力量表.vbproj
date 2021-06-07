@@ -32,7 +32,7 @@
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>false</MapFileExtensions>
     <AutorunEnabled>true</AutorunEnabled>
-    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationRevision>2</ApplicationRevision>
     <ApplicationVersion>2.1.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -72,10 +72,10 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>9776AF98857A4CA57468AEAA7D27D83DDBC22EC5</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>FD6839CE3076F719230504AEDA70A6A5388CA588</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>青少年壓力量表_1_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>青少年壓力量表_2_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateManifests>true</GenerateManifests>
@@ -115,10 +115,10 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="StressForm2.Designer.vb">
-      <DependentUpon>StressForm2.vb</DependentUpon>
+    <Compile Include="PHQ9.Designer.vb">
+      <DependentUpon>PHQ9.vb</DependentUpon>
     </Compile>
-    <Compile Include="StressForm2.vb">
+    <Compile Include="PHQ9.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="StressForm1.vb">
@@ -159,8 +159,8 @@
     <Compile Include="Tools.vb" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="StressForm2.resx">
-      <DependentUpon>StressForm2.vb</DependentUpon>
+    <EmbeddedResource Include="PHQ9.resx">
+      <DependentUpon>PHQ9.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StressForm1.resx">
       <DependentUpon>StressForm1.vb</DependentUpon>
@@ -191,6 +191,7 @@
     <None Include="App.config" />
     <None Include="packages.config" />
     <None Include="青少年壓力量表_1_TemporaryKey.pfx" />
+    <None Include="青少年壓力量表_2_TemporaryKey.pfx" />
     <None Include="青少年壓力量表_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>

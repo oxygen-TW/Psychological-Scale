@@ -161,7 +161,7 @@
         UserMenu.Close()
         Try
             StressForm1.Close()
-            StressForm2.Close()
+            PHQ9.Close()
         Catch ex As System.NullReferenceException
 
         End Try

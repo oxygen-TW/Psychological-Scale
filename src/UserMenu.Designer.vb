@@ -28,6 +28,7 @@ Partial Class UserMenu
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.ButtonStreess2 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Button1
@@ -92,11 +93,22 @@ Partial Class UserMenu
         Me.ButtonStreess2.Text = "檢測壓力(一般)"
         Me.ButtonStreess2.UseVisualStyleBackColor = True
         '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(204, 193)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(159, 49)
+        Me.Button4.TabIndex = 6
+        Me.Button4.Text = "PHQ-9"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
         'UserMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(379, 328)
+        Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.ButtonStreess2)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
@@ -117,4 +129,5 @@ Partial Class UserMenu
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents ButtonStreess2 As Button
+    Friend WithEvents Button4 As Button
 End Class

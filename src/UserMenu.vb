@@ -33,7 +33,7 @@ Public Class UserMenu
         End If
     End Sub
 
-    Sub WriteConfigFile(ByVal UserName)
+    Shared Sub WriteConfigFile(ByVal UserName)
         Dim appData = GetAppData()
         If UserName Is Nothing Then
             Throw New ArgumentNullException(NameOf(UserName))
@@ -60,13 +60,18 @@ Public Class UserMenu
 
     Private Sub ButtonStreess2_Click(sender As Object, e As EventArgs) Handles ButtonStreess2.Click
         Me.Hide()
-        StressForm2.Show()
+        PHQ9.Show()
     End Sub
 
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles Me.Load
         MsgBox("青少年壓力量表為聯合心理諮商所、緯恩整合行銷版權所有!" & vbCrLf & "憂鬱量表為董氏基金會版權所有!" & vbCrLf & "氧氣工作室僅將他做成小程式，並不擁有量表版權 " _
             & vbCrLf & "一般壓力量表為衛生福利部國民健康署版權所有" & vbCrLf & vbCrLf & "使用本程式即同意我們收集數據進行分析!", 0 + 48, "版權聲明")
 
-        Call Registration()
+        'Call Registration()
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        Me.Hide()
+        PHQ9.Show()
     End Sub
 End Class

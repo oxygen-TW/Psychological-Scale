@@ -194,7 +194,7 @@
         UserMenu.Close()
         Try
             DepressionForm.Close()
-            StressForm2.Close()
+            PHQ9.Close()
         Catch ex As System.NullReferenceException
 
         End Try
