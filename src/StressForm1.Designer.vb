@@ -22,6 +22,7 @@ Partial Class StressForm1
     '請勿使用程式碼編輯器進行修改。
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(StressForm1))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
@@ -47,7 +48,7 @@ Partial Class StressForm1
         'Button1
         '
         Me.Button1.Location = New System.Drawing.Point(24, 168)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(103, 60)
         Me.Button1.TabIndex = 1
@@ -57,7 +58,7 @@ Partial Class StressForm1
         'Button2
         '
         Me.Button2.Location = New System.Drawing.Point(139, 168)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(4)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(103, 60)
         Me.Button2.TabIndex = 2
@@ -67,7 +68,7 @@ Partial Class StressForm1
         'Button3
         '
         Me.Button3.Location = New System.Drawing.Point(253, 168)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(4)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(103, 60)
         Me.Button3.TabIndex = 3
@@ -77,7 +78,7 @@ Partial Class StressForm1
         'Button4
         '
         Me.Button4.Location = New System.Drawing.Point(139, 235)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(4)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(103, 60)
         Me.Button4.TabIndex = 4
@@ -87,7 +88,7 @@ Partial Class StressForm1
         'Button5
         '
         Me.Button5.Location = New System.Drawing.Point(24, 235)
-        Me.Button5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button5.Margin = New System.Windows.Forms.Padding(4)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(103, 60)
         Me.Button5.TabIndex = 5
@@ -98,7 +99,7 @@ Partial Class StressForm1
         '
         Me.Button6.ForeColor = System.Drawing.Color.Red
         Me.Button6.Location = New System.Drawing.Point(253, 266)
-        Me.Button6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button6.Margin = New System.Windows.Forms.Padding(4)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(103, 29)
         Me.Button6.TabIndex = 6
@@ -118,7 +119,7 @@ Partial Class StressForm1
         '
         Me.Button7.ForeColor = System.Drawing.Color.Blue
         Me.Button7.Location = New System.Drawing.Point(253, 235)
-        Me.Button7.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button7.Margin = New System.Windows.Forms.Padding(4)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(103, 29)
         Me.Button7.TabIndex = 8
@@ -126,7 +127,7 @@ Partial Class StressForm1
         Me.Button7.Text = "上一題"
         Me.Button7.UseVisualStyleBackColor = True
         '
-        'stressFrom1
+        'StressForm1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -141,8 +142,9 @@ Partial Class StressForm1
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label1)
         Me.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.Name = "stressFrom1"
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4)
+        Me.Name = "StressForm1"
         Me.Text = "青少年壓力量表-氧氣工作室"
         Me.ResumeLayout(False)
 

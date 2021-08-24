@@ -64,8 +64,8 @@ Public Class UserMenu
     End Sub
 
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles Me.Load
-        MsgBox("青少年壓力量表為聯合心理諮商所、緯恩整合行銷版權所有!" & vbCrLf & "憂鬱量表為董氏基金會版權所有!" & vbCrLf & "氧氣工作室僅將他做成小程式，並不擁有量表版權 " _
-            & vbCrLf & "一般壓力量表為衛生福利部國民健康署版權所有" & vbCrLf & vbCrLf & "使用本程式即同意我們收集數據進行分析!", 0 + 48, "版權聲明")
+        'MsgBox("青少年壓力量表為聯合心理諮商所、緯恩整合行銷版權所有!" & vbCrLf & "憂鬱量表為董氏基金會版權所有!" & vbCrLf & "氧氣工作室僅將他做成小程式，並不擁有量表版權 " _
+        '   & vbCrLf & "一般壓力量表為衛生福利部國民健康署版權所有" & vbCrLf & vbCrLf & "使用本程式即同意我們收集數據進行分析!", 0 + 48, "版權聲明")
 
         'Call Registration()
     End Sub
@@ -73,5 +73,10 @@ Public Class UserMenu
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         Me.Hide()
         PHQ9.Show()
+    End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        Me.Hide()
+        BAI.Show()
     End Sub
 End Class

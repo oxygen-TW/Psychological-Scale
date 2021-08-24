@@ -33,7 +33,7 @@
     <MapFileExtensions>false</MapFileExtensions>
     <AutorunEnabled>true</AutorunEnabled>
     <ApplicationRevision>2</ApplicationRevision>
-    <ApplicationVersion>2.1.0.%2a</ApplicationVersion>
+    <ApplicationVersion>2.3.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -115,6 +115,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BAI.Designer.vb">
+      <DependentUpon>BAI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BAI.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="PHQ9.Designer.vb">
       <DependentUpon>PHQ9.vb</DependentUpon>
     </Compile>
@@ -159,6 +165,9 @@
     <Compile Include="Tools.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="BAI.resx">
+      <DependentUpon>BAI.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PHQ9.resx">
       <DependentUpon>PHQ9.vb</DependentUpon>
     </EmbeddedResource>
@@ -179,6 +188,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include=".editorconfig" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>

@@ -22,6 +22,7 @@ Partial Class UserMenu
     '請勿使用程式碼編輯器進行修改。
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(UserMenu))
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
@@ -29,6 +30,8 @@ Partial Class UserMenu
         Me.Label2 = New System.Windows.Forms.Label()
         Me.ButtonStreess2 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Button1
@@ -54,7 +57,7 @@ Partial Class UserMenu
         'Button3
         '
         Me.Button3.ForeColor = System.Drawing.Color.Red
-        Me.Button3.Location = New System.Drawing.Point(235, 282)
+        Me.Button3.Location = New System.Drawing.Point(408, 289)
         Me.Button3.Margin = New System.Windows.Forms.Padding(4)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(128, 30)
@@ -85,6 +88,7 @@ Partial Class UserMenu
         '
         'ButtonStreess2
         '
+        Me.ButtonStreess2.Enabled = False
         Me.ButtonStreess2.Location = New System.Drawing.Point(24, 193)
         Me.ButtonStreess2.Margin = New System.Windows.Forms.Padding(4)
         Me.ButtonStreess2.Name = "ButtonStreess2"
@@ -103,11 +107,34 @@ Partial Class UserMenu
         Me.Button4.Text = "PHQ-9"
         Me.Button4.UseVisualStyleBackColor = True
         '
+        'Button5
+        '
+        Me.Button5.Enabled = False
+        Me.Button5.Location = New System.Drawing.Point(377, 193)
+        Me.Button5.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(159, 49)
+        Me.Button5.TabIndex = 8
+        Me.Button5.Text = "Nothing now"
+        Me.Button5.UseVisualStyleBackColor = True
+        '
+        'Button6
+        '
+        Me.Button6.Location = New System.Drawing.Point(377, 124)
+        Me.Button6.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(159, 49)
+        Me.Button6.TabIndex = 7
+        Me.Button6.Text = "貝克焦慮量表"
+        Me.Button6.UseVisualStyleBackColor = True
+        '
         'UserMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(379, 328)
+        Me.ClientSize = New System.Drawing.Size(549, 332)
+        Me.Controls.Add(Me.Button5)
+        Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.ButtonStreess2)
         Me.Controls.Add(Me.Label2)
@@ -115,6 +142,7 @@ Partial Class UserMenu
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "UserMenu"
         Me.Text = "情緒量表"
@@ -130,4 +158,6 @@ Partial Class UserMenu
     Friend WithEvents Label2 As Label
     Friend WithEvents ButtonStreess2 As Button
     Friend WithEvents Button4 As Button
+    Friend WithEvents Button5 As Button
+    Friend WithEvents Button6 As Button
 End Class
